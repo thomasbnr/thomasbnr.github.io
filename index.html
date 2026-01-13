@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Data Analyst - Analyse de données, Business Intelligence, Python, SQL, Power BI">
+    <meta name="author" content="Thomas Bonnerot">
+    <meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Business Intelligence, Data Visualization">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-username.github.io">
+    <meta property="og:title" content="Votre Nom | Data Analyst">
+    <meta property="og:description"
+        content="Data Analyst passionné par la transformation de données en insights actionnables">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Thomas Bonnerot | Data Analyst</title>
+</head>
+
+<body>
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 3v18h18"></path>
+                        <path d="M18 9l-5 5-4-4-3 3"></path>
+                    </svg>
+                </div>
+                <span class="logo-text">TB</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Expérience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="assets/cv.pdf" class="btn btn-nav" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>CV</span>
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Data Analyst</p>
+                <h1 class="hero-title">Thomas Bonnerot</h1>
+                <p class="hero-description">
+                    En reconversion vers le métier de Data Analyst, j’ai développé de solides
+                    compétences en SQL, Python et en visualisation de données à travers des projets
+                    concrets. Curieux, rigoureux et doté d’un esprit analytique, je suis à la recherche d’un
+                    poste de Data Analyst à partir de mars 2026
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="#about" class="btn btn-secondary">En savoir plus</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="https://github.com/thomasbnr" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thomas-bonnerot/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:th.bonnerot@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="assets/profile.jpg" alt="Thomas Bonnerot" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">À propos</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Data Analyst passionné par la <strong>transformation digitale</strong> et
+                        l'exploitation des données pour créer de la valeur business.
+                    </p>
+
+                    <p>
+                        Fort de <strong>plusieurs années d'expériences</strong> en entreprise, en tant que chef de
+                        projet transformation digitale, j'ai développé une expertise
+                        dans l'analyse de besoins, la création de tableaux de bord décisionnels et
+                        l'automatisation de processus métiers.
+                    </p>
+
+                    <p>
+                        Mon parcours m'a permis de combiner des compétences techniques solides
+                        (Python, SQL, Power BI) avec une vision orientée métier, me permettant
+                        de traduire les besoins opérationnels en solutions data concrètes.
+                    </p>
+
+                    <p>
+                        Je suis convaincu que la data est un levier stratégique pour toute organisation,
+                        et j'aime relever le défi de transformer des données complexes en insights
+                        clairs et actionnables.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Analyse & BI</h4>
+                                <p>Dashboards Power BI, analyses SQL, KPIs métiers</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Automatisation</h4>
+                                <p>Scripts Python, Power Automate, intégrations API</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Accompagnement</h4>
+                                <p>Conduite du changement, formation utilisateurs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+         ============================================ -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Compétences</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Langages -->
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category">Langages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">🐍 Python</span>
+                        <span class="skill-tag">🗃️ SQL</span>
+                        <span class="skill-tag">⚡ JavaScript</span>
+                        <span class="skill-tag">🐘 PHP</span>
+                        <span class="skill-tag">📐 DAX</span>
+                        <span class="skill-tag">🔄 M (Power Query)</span>
+                    </div>
+                </div>
+
+                <!-- Data & BI -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category">Data & BI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">📊 Power BI</span>
+                        <span class="skill-tag">🐘 PostgreSQL</span>
+                        <span class="skill-tag">📗 Excel / VBA</span>
+                        <span class="skill-tag">🐼 Pandas / NumPy</span>
+                    </div>
+                </div>
+
+                <!-- Outils -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category">Outils</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">🎨 Figma</span>
+                        <span class="skill-tag">⚙️ Power Automate</span>
+                        <span class="skill-tag">📁 SharePoint</span>
+                        <span class="skill-tag">🔀 Git / GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-category">Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Analyse fonctionnelle</span>
+                        <span class="skill-tag">UX/UI Design</span>
+                        <span class="skill-tag">Gestion de projet</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Conduite du changement</span>
+                        <span class="skill-tag">Formation</span>
+                        <span class="skill-tag">Esprit d'équipe</span>
+                        <span class="skill-tag">Autonomie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EXPERIENCE SECTION
+         Expériences professionnelles détaillées
+         ============================================ -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Expérience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Expérience 1 : Chef de projet Transformation Digitale -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Avril 2022 - Aujourd'hui</span>
+                            </div>
+                            <span class="timeline-badge current">En poste</span>
+                        </div>
+
+                        <h3 class="timeline-title">Chef de projet Transformation Digitale</h3>
+                        <h4 class="timeline-company">Rubel & Ménasché</h4>
+
+                        <ul class="timeline-tasks">
+                            <li>
+                                <span class="task-icon">📊</span>
+                                <span>Analyse et centralisation des besoins métiers auprès de plusieurs équipes afin de
+                                    transformer les enjeux opérationnels en solutions data et digitales</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">📈</span>
+                                <span>Conception, développement et déploiement en production de <strong>tableaux de bord
+                                        décisionnels</strong> sous Power BI, connectés à des bases SQL/PostgreSQL,
+                                    permettant un <strong>gain de plusieurs heures par semaine</strong> sur les tâches
+                                    de reporting</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">🐍</span>
+                                <span>Développement de <strong>scripts et d'applications en Python</strong> pour
+                                    l'automatisation du traitement des données</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">⚙️</span>
+                                <span>Automatisation de processus métiers via l'intégration d'API et l'utilisation de
+                                    <strong>Power Automate</strong>, économisant plusieurs heures par semaine, par
+                                    service</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">🌐</span>
+                                <span>Mise en place d'un <strong>intranet SharePoint</strong> adopté par les équipes,
+                                    centralisant plus de 200 documents métiers et améliorant la diffusion de
+                                    l'information interne</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">🔒</span>
+                                <span>Animation d'ateliers de sensibilisation à la <strong>cybersécurité</strong> auprès
+                                    de plus de 100 collaborateurs</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">🤝</span>
+                                <span>Support utilisateur niveaux 1 et 2 et <strong>accompagnement au
+                                        changement</strong> lors du déploiement de nouveaux outils digitaux</span>
+                            </li>
+                        </ul>
+
+                        <div class="timeline-tech">
+                            <span>Power BI</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Power Automate</span>
+                            <span>SharePoint</span>
+                            <span>API REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience 2 : Développeur Web -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Avril 2021 - Juillet 2021</span>
+                            </div>
+                            <span class="timeline-badge">Stage</span>
+                        </div>
+
+                        <h3 class="timeline-title">Développeur Web</h3>
+                        <h4 class="timeline-company">Cyclotron Enedis</h4>
+
+                        <ul class="timeline-tasks">
+                            <li>
+                                <span class="task-icon">📋</span>
+                                <span>Récolte, analyse et centralisation des <strong>besoins clients</strong> afin de
+                                    formaliser des spécifications fonctionnelles claires</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">🎨</span>
+                                <span>Conception de <strong>maquettes fonctionnelles</strong> sous Figma, orientées
+                                    expérience utilisateur (UX/UI)</span>
+                            </li>
+                            <li>
+                                <span class="task-icon">💻</span>
+                                <span>Développement d'<strong>applications et de fonctionnalités</strong> adaptées aux
+                                    besoins métiers en JavaScript, PHP, SQL</span>
+                            </li>
+                        </ul>
+
+                        <div class="timeline-tech">
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>SQL</span>
+                            <span>Figma</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJET SECTION
+         ============================================ -->
+    <section class="project section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Projet personnel</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-simple">
+                <img src="assets/project-depression.jpg" alt="Projet Detection de depression"
+                    class="project-simple-image">
+                <div class="project-simple-content">
+                    <div class="project-simple-header">
+                        <h3 class="project-simple-title">Detection de Depression</h3>
+                        <a href="https://github.com/thomasbnr/Detection_depression" target="_blank"
+                            rel="noopener noreferrer" class="project-simple-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            <span>Voir sur GitHub</span>
+                        </a>
+                    </div>
+                    <p class="project-simple-description">
+                        Mise en œuvre expérimentale de sept algorithmes d’apprentissage supervisé
+                        dédiés à l’identification automatique de signes de dépression chez les
+                        utilisateurs des réseaux sociaux. L’étude repose sur l’analyse de plus
+                        de 60 000 données issues de plateformes sociales et permet d’obtenir un
+                        taux de précision supérieur à 90 %, démontrant ainsi l’efficacité des
+                        modèles développés pour la détection précoce de troubles dépressifs à
+                        partir de contenus textuels.
+                    </p>
+                    <div class="project-simple-tech">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>NLTK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">En écoute active</h3>
+                    <p class="contact-text">
+                        Vous recherchez un Data Analyst pour transformer vos données en
+                        insights actionnables ? Je reste disponible pour échanger
+                        sur vos enjeux métiers et étudier la manière dont je peux
+                        contribuer à vos projets
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:th.bonnerot@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">th.bonnerot@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/thomas-bonnerot/" target="_blank" rel="noopener noreferrer"
+                            class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">thomas-bonnerot</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/thomasbnr" target="_blank" rel="noopener noreferrer"
+                            class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">thomasbnr</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Localisation</span>
+                                <span class="method-value">Ile de france, France</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <div class="logo-icon small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v18h18"></path>
+                                <path d="M18 9l-5 5-4-4-3 3"></path>
+                            </svg>
+                        </div>
+                        <span>TB</span>
+                    </a>
+                    <p class="footer-tagline">Data Analyst | Transformer les données en valeur</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#about">À propos</a>
+                    <a href="#skills">Compétences</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#experience">Expérience</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="footer-social">
+                    <a href="https://github.com/thomasbnr" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thomas-bonnerot/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="th.bonnerot@gmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                            <p>&copy; <span id="current-year"></span> Thomas Bonnerot. Tous droits réservés.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
